@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage('build'){
+           steps{
+            echo "initial build"
+           } 
+        }
+
+        stage('scan'){
+            steps{
+                echo "scanning the app"
+            }
+        }
+    }
+}
